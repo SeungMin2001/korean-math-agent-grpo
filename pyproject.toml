@@ -1,0 +1,8 @@
+[project]
+name = "korean-math-rl"
+version = "0.1.0"
+description = "A verifiable Korean math agent environment for GRPO experiments"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
