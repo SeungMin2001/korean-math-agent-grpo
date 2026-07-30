@@ -21,3 +21,11 @@ class EnvironmentResult: #환경이 행동 처리한 결과
     truncated: bool #초과 됬니?
     info: dict # 추가정보
     
+@dataclass
+class TrajectoryStep: #기록 클래스
+    step_number: int
+    action: AgentAction
+    observation: dict
+    reward: float
+    done: bool
+    

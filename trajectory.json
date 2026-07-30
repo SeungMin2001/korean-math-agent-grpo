@@ -1,0 +1,29 @@
+[
+  {
+    "step_number": 1,
+    "action": {
+      "action_type": "calculator",
+      "payload": "6000/3*5"
+    },
+    "observation": {
+      "type": "tool_result",
+      "result": 10000.0
+    },
+    "reward": 0.0,
+    "done": false
+  },
+  {
+    "step_number": 2,
+    "action": {
+      "action_type": "answer",
+      "payload": 10000
+    },
+    "observation": {
+      "type": "final_result",
+      "correct": true,
+      "reward": 1.0
+    },
+    "reward": 1.0,
+    "done": true
+  }
+]

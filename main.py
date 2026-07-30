@@ -25,6 +25,13 @@ def main():
 
     final_result = environment.step(answer_action)
     print("최종 결과:", final_result)
+    
+    print("/nTrajectory") #step별 행동결과 기록
+    for step in environment.trajectory:
+        print(step)
+        
+    environment.save_trajectory("trajectory.json")
+    print("trajectory 저장 완료")
 
 if __name__ == "__main__":
     main()
